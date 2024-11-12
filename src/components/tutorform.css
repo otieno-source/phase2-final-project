@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+.tutorform {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tutorform h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.tutorform label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.tutorform input[type="text"],
+.tutorform input[type="tel"],
+.tutorform input[type="number"],
+.tutorform select,
+.tutorform input[type="file"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.tutorform input[type="file"] {
+    padding: 3px;
+}
+
+.tutorform input:focus,
+.tutorform select:focus {
+    outline: none;
+    border: 1px solid #3f51b5;
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
+}
+
+.tutorform button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.tutorform button:hover {
+    background-color: #5c6bc0;
+    transform: translateY(-2px);
+}
+
+.tutorform button:active {
+    transform: translateY(0);
+}
+
+.tutorform option {
+    padding: 10px;
+}
