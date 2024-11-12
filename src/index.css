@@ -6,12 +6,12 @@ body {
 }
 
 .header{
-  border-style: dotted;
+  /* border-style: dotted; */
 }
 .nav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   grid-template-rows: 100%;
-  border-style: dotted;
+  /* border-style: dotted; */
 }
