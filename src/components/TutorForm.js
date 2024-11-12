@@ -1,10 +1,10 @@
 import React from "react";
 import './tutorform.css'
 
-function TutorForm(){
+function TForminput(){
     return(
         <div className="tutorform">
-        <h1>Tutor's Signup Form</h1>
+        <h3>Tutor's Signup Form</h3>
         <form action="#" method="POST" enctype="multipart/form-data">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required/>
@@ -40,4 +40,4 @@ function TutorForm(){
     )
 }
 
-export default TutorForm;
+export default TForminput;

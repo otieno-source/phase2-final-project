@@ -2,16 +2,16 @@ import React from "react";
 import './index.css'
 import Header from "./components/Header";
 import Nav from "./components/Navigate";
-import TutorForm from "./components/TutorForm";
-import ParentsNav from "./components/Parentsform";
+import TutorFormButton from "./components/Nav1-TutorRegForm";
+import ParentsNav from "./components/ParentsNav";
 
 function App(){
   return(
-    <div>
+    <div className="container">
       <Header/>
-      <Nav/>
+      <TutorFormButton/>
       <ParentsNav/>
-      <TutorForm/>
+      <Nav/>
     </div>
   )
 }

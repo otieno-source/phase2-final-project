@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+.parentssignupForm {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.parentssignupForm h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.parentssignupForm label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.parentssignupForm input[type="text"],
+.parentssignupForm input[type="tel"],
+.parentssignupForm input[type="number"],
+.parentssignupForm select,
+.parentssignupForm input[type="file"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.parentssignupForm input[type="file"] {
+    padding: 3px;
+}
+
+.parentssignupForm input:focus,
+.parentssignupForm select:focus {
+    outline: none;
+    border: 1px solid #3f51b5;
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
+}
+
+.parentssignupForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.parentssignupForm button:hover {
+    background-color: #5c6bc0;
+    transform: translateY(-2px);
+}
+
+.parentssignupForm button:active {
+    transform: translateY(0);
+}
+
+.parentssignupForm option {
+    padding: 10px;
+}

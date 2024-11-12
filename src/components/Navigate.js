@@ -1,5 +1,6 @@
 import React from 'react';
 import './navstyle.css'; // Make sure to import the CSS file
+import TutorFormButton from './Nav1-TutorRegForm';
 
 function Nav() {
     return (
@@ -12,7 +13,6 @@ function Nav() {
                 </select>
                 <button type="submit" className="nav-button">Search</button>
             </form>
-            <button className="tutor-button">Become a Tutor</button>
         </div>
     );
 }
