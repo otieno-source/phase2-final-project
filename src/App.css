@@ -1,131 +1,175 @@
-body{
+body {
+  font-family:'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
 
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  /* background-image: url(./assets/back2.jpg);
-  background-size: cover;       
-  background-position: center;  
-  background-repeat: no-repeat;  */
- }
-
- .header h1{
-  font-weight: bolder;
-  font-size: xx-large;
-  color: black;
- }
-
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
 
 .header {
-  background-image: url(./assets/passionlead.jpg); 
-  background-size: cover;       
-  background-position: center;  
+  background-image: url('./assets/ladychildrenlearning.jpg');
+  background-size: cover; 
+  background-position: center; 
   background-repeat: no-repeat; 
-  color: white;
+  background-color: #3f51b5; 
+  color: white; 
+  padding: 20px; 
   text-align: center;
-  padding: 20px;
-  min-height: 200px; 
+  height: 250px; 
 }
+
+.header, h1{
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-top: 1cm;
+  font-style: normal;
+}
+
+.header, p{
+  font-size:medium;
+  font-weight: bolder;
+  font-style: italic;
+}
+
 
 .nav1, .nav2 {
+  background: #f5f5f5;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
-  margin: 10px 0;
 }
 
-.nav1 a, .nav2 a {
-  margin: 0 10px;
-  /* text-decoration: none; */
-  color: #000409;
-}
-
-.nav1 .becometutor{
-  font-weight: 900;
-}
- .nav2{
+.nav2{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 15px;
-  border-style: none;
-  border-radius: 35px;
-  background-color: whitesmoke;
- }
+}
 
- 
- /* nav2 #searchbtn */
+.parentsnav{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-style: groove;
+  border-color: #a47103;
+  border-radius: 25px;
+}
+
+.nav-link {
+  margin: 0 20px;
+  color: #3f51b5;
+  text-decoration: none;
+}
 
 .searchbtn{
-  font-size: xx-large;
-  font-style: italic;
-}
- 
- 
- .searchbtn a:before {
-  content: '';
-  border-bottom: solid 1px white;
-  position: absolute;
-  bottom: 0; left: 0;
-  width: 100%;
+	font-size: xx-large;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.searchbtn a:hover:before {
-  -webkit-transform: scaleY(4);
-     -moz-transform: scaleY(4);
-      -ms-transform: scaleY(4);
-       -o-transform: scaleY(4);
-          transform: scaleY(4);
+.ontopnav {
+  margin-bottom: 20px;
 }
 
-.searchbtn a:before {
-  -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+.main-content {
+  padding: 20px;
 }
 
-/* nav2 #searchbtn */
-
-.nav2 .parentsnav {
-  border-style: ridge;
-  align-content: center;
-  padding-left: 3px;
-  padding-right: 3px;
-  background-color: bisque;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-}
-
-
-.signup-tutor, .signup-parent, .search-tutors {
-  max-width: 500px;
+.signup-parent, .signup-tutor, .parentslogin {
+  max-width: 300px;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
+  background-color: white;
   border-radius: 5px;
-  border-style: dotted;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.signup-parent h1 {
-  color: black;
-  font-size: 24px; 
-  font-weight: bold; 
-  text-align: center; 
-  margin: 20px 0; 
-}
-
-.signup-tutor, .signup-parent, .search-tutors {
-  max-width: 500px;
+.search-tutors{
+  max-width: 600px;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px; /* Adjust this for a smoother corner effect */
-  border-style: dotted;
-  background-color: white; /* Ensure a solid background for the shadow effect */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow for elevation */
-  transition: box-shadow 0.3s ease; /* Smooth transition for shadow changes */
+  
+  border-radius: 300px;
+  border: 2px solid #a47103;
+  background-color: rgba(223, 216, 216, 0.559);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.signup-tutor:hover, 
-.signup-parent:hover, 
-.search-tutors:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Elevated shadow effect on hover */
+.signup-parent form,
+.signup-tutor form {
+  display: flex;
+  flex-direction: column;
 }
 
-.header, .nav1, .nav2 {
-  z-index: 1; /* Ensure navigation is above the forms */
+.signup-parent input,
+.signup-tutor input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5c6bc0;
+}
+
+.tutor-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tutor-list li {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.tutor-list img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.back-button {
+  margin-bottom: 20px;
+}
+
+footer{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: max-content;
+  font-style: normal;
+  font-size: smaller;
+  background: #bdbcbb;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+footer, p{
+  font-style: normal;
+  font-size: smaller;
+  max-height: fit-content;
 }

@@ -10,8 +10,7 @@ const SignUpTutor = () => {
   const [picture, setPicture] = useState(null);
   const navigate = useNavigate();
 
-  const handleFileUpload = async (file) => {
-    
+  const handleFileUpload = (file) => {
     return file.name; 
   };
 
@@ -34,16 +33,9 @@ const SignUpTutor = () => {
       body: JSON.stringify(newTutor),
     })
     .then((response) => response.json())
-    .then((data) => {
-      console.log('Success:', data);
-      // Clear the form fields
-      setName('');
-      setPhone('');
-      setSubject('');
-      setSalary('');
-      setAge('');
-      setPicture(null);
+    .then(() => {
       alert('Details submitted successfully!');
+      navigate('/');
     })
     .catch((error) => {
       console.error('Error:', error);
@@ -51,12 +43,13 @@ const SignUpTutor = () => {
   };
 
   const handleNotToday = () => {
-    navigate("/"); // Route back to the main App.js
+    navigate("/");
   };
 
   return (
     <div className="signup-tutor">
-      <h2>Sign Up as a Tutor</h2>
+      <h2>Sign Up as a Tutor</h2><br></br>
+      <button onClick={handleNotToday}>Not Today</button><br></br>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} required />
         <input type="text" placeholder="Phone" value={phone} onChange={(e) => setPhone(e.target.value)} required />
@@ -66,7 +59,7 @@ const SignUpTutor = () => {
         <input type="file" accept="image/*" onChange={(e) => setPicture(e.target.files[0])} required />
         <button type="submit">Submit</button>
       </form>
-      <button onClick={handleNotToday}>Not Today</button>
+      
     </div>
   );
 };
