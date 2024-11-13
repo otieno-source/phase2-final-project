@@ -1,19 +1,28 @@
-import React from "react";
-import './index.css'
-import Header from "./components/Header";
-import Nav from "./components/Navigate";
-import TutorFormButton from "./components/Nav1-TutorRegForm";
-import ParentsNav from "./components/ParentsNav";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components2/Header';
+import Nav1 from './components2/Nav1';
+import Nav2 from './components2/Nav2';
+import SignUpTutor from './components2/SignUpTutor';
+import SearchTutors from './components2/SearchTutors';
+import SignUpParent from './components2/SignUpParent';
+// import './App.css';
 
-function App(){
-  return(
-    <div className="container">
-      <Header/>
-      <TutorFormButton/>
-      <ParentsNav/>
-      <Nav/>
-    </div>
-  )
-}
+const App = () => {
+  return (
+    <Router>
+      <div>
+        <Header />
+        <Nav1 />
+        <Nav2 />
+        <Routes>
+          <Route path="/become-a-tutor" element={<SignUpTutor />} />
+          <Route path="/search-tutors" element={<SearchTutors />} />
+          <Route path="/create-account" element={<SignUpParent />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+};
 
 export default App;

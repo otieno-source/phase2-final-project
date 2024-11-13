@@ -1,0 +1,60 @@
+{
+  "tutors": [
+    {
+      "name": "John Doe",
+      "phone": "123-456-7890",
+      "salary": 50000,
+      "subject": "math",
+      "age": 30,
+      "rating": 5,
+      "picture": "path/to/uploaded/picture1.jpg",
+      "id": "2070"
+    },
+    {
+      "name": "Jane Smith",
+      "phone": "098-765-4321",
+      "salary": 55000,
+      "subject": "science",
+      "age": 25,
+      "rating": 4,
+      "picture": "path/to/uploaded/picture2.jpg",
+      "id": "1169"
+    },
+    {
+      "id": "f6ea",
+      "name": "collins",
+      "phone": "0786666",
+      "subject": "maths",
+      "salary": "34444",
+      "age": "34",
+      "picture": "WhatsApp Image 2024-11-08 at 08.48.49.jpeg"
+    },
+    {
+      "id": "601e",
+      "name": "collins",
+      "phone": "0786666",
+      "subject": "maths",
+      "salary": "34444",
+      "age": "34",
+      "picture": "WhatsApp Image 2024-11-08 at 08.48.49.jpeg"
+    },
+    {
+      "id": "7a34",
+      "name": "derick ",
+      "phone": "23333",
+      "subject": "english",
+      "salary": "455666",
+      "age": "45",
+      "picture": "WhatsApp Image 2024-10-21 at 19.03.59.jpeg"
+    },
+    {
+      "id": "7251",
+      "name": "vivian",
+      "phone": "345667777",
+      "subject": "accounts",
+      "salary": "50000",
+      "age": "27",
+      "picture": "vivian.jpg"
+    }
+  ]
+}
