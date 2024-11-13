@@ -1,9 +1,28 @@
+body{
+
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  /* background-image: url(./assets/back2.jpg);
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;  */
+ }
+
+ .header h1{
+  font-weight: bolder;
+  font-size: xx-large;
+  color: black;
+ }
+
+
 .header {
-  background-color: #3f4042;
+  background-image: url(./assets/passionlead.jpg); 
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
   color: white;
   text-align: center;
   padding: 20px;
- 
+  min-height: 200px; 
 }
 
 .nav1, .nav2 {
@@ -13,9 +32,63 @@
 
 .nav1 a, .nav2 a {
   margin: 0 10px;
-  text-decoration: none;
-  color: #4a90e2;
+  /* text-decoration: none; */
+  color: #000409;
 }
+
+.nav1 .becometutor{
+  font-weight: 900;
+}
+ .nav2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
+  border-style: none;
+  border-radius: 35px;
+  background-color: whitesmoke;
+ }
+
+ 
+ /* nav2 #searchbtn */
+
+.searchbtn{
+  font-size: xx-large;
+  font-style: italic;
+}
+ 
+ 
+ .searchbtn a:before {
+  content: '';
+  border-bottom: solid 1px white;
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%;
+}
+
+.searchbtn a:hover:before {
+  -webkit-transform: scaleY(4);
+     -moz-transform: scaleY(4);
+      -ms-transform: scaleY(4);
+       -o-transform: scaleY(4);
+          transform: scaleY(4);
+}
+
+.searchbtn a:before {
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+/* nav2 #searchbtn */
+
+ .nav2 .parentsnav{
+  border-style:ridge;
+  align-content: center;
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: bisque;
+ }
+
 
 .signup-tutor, .signup-parent, .search-tutors {
   max-width: 500px;
@@ -28,8 +101,8 @@
 
 .signup-parent h1 {
   color: black;
-  font-size: 24px; /* Specify font size */
-  font-weight: bold; /* Add bold weight */
-  text-align: center; /* Center align the text */
-  margin: 20px 0; /* Add margin */
+  font-size: 24px; 
+  font-weight: bold; 
+  text-align: center; 
+  margin: 20px 0; 
 }
