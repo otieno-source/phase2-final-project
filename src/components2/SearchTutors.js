@@ -23,7 +23,7 @@ const SearchTutors = () => {
 
   return (
     <div className="search-tutors">
-      <h2>Tutors List</h2>
+      <h2>Our Tutors</h2>
       <button onClick={() => navigate('/')}>Back to Homepage</button> {/* Close button */}
 
       <ul>

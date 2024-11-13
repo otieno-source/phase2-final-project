@@ -81,13 +81,14 @@ body{
 
 /* nav2 #searchbtn */
 
- .nav2 .parentsnav{
-  border-style:ridge;
+.nav2 .parentsnav {
+  border-style: ridge;
   align-content: center;
   padding-left: 3px;
   padding-right: 3px;
   background-color: bisque;
- }
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
 
 
 .signup-tutor, .signup-parent, .search-tutors {
@@ -105,4 +106,26 @@ body{
   font-weight: bold; 
   text-align: center; 
   margin: 20px 0; 
+}
+
+.signup-tutor, .signup-parent, .search-tutors {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Adjust this for a smoother corner effect */
+  border-style: dotted;
+  background-color: white; /* Ensure a solid background for the shadow effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow for elevation */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow changes */
+}
+
+.signup-tutor:hover, 
+.signup-parent:hover, 
+.search-tutors:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Elevated shadow effect on hover */
+}
+
+.header, .nav1, .nav2 {
+  z-index: 1; /* Ensure navigation is above the forms */
 }
