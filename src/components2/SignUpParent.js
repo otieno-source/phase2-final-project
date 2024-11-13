@@ -1,15 +1,21 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 
 const SignUpParent = () => {
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Submit form logic here
+    // work on it later
+  };
+
+  const handleNotToday = () => {
+    navigate("/"); // Route back to the main App.js
   };
 
   return (
     <div className="signup-parent">
-      <h2>Sign Up as a Parent</h2>
+      <h2>Create Parent Account</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Name" required />
         <input type="text" placeholder="Telephone Number" required />
@@ -17,6 +23,7 @@ const SignUpParent = () => {
         <input type="password" placeholder="Password" required />
         <button type="submit">Submit</button>
       </form>
+      <button onClick={handleNotToday}>Not Today</button>
     </div>
   );
 };

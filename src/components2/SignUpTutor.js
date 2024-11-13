@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const SignUpTutor = () => {
   const [name, setName] = useState('');
@@ -7,16 +8,15 @@ const SignUpTutor = () => {
   const [salary, setSalary] = useState('');
   const [age, setAge] = useState('');
   const [picture, setPicture] = useState(null);
+  const navigate = useNavigate();
 
   const handleFileUpload = async (file) => {
-    // Assume this function processes the file and uploads it
-    // Implement your file upload logic here
-    return file.name; // Replace with actual upload logic
+    
+    return file.name; 
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const newTutor = {
       name,
       phone,
@@ -43,12 +43,15 @@ const SignUpTutor = () => {
       setSalary('');
       setAge('');
       setPicture(null);
-      // Show success alert
       alert('Details submitted successfully!');
     })
     .catch((error) => {
       console.error('Error:', error);
     });
+  };
+
+  const handleNotToday = () => {
+    navigate("/"); // Route back to the main App.js
   };
 
   return (
@@ -63,6 +66,7 @@ const SignUpTutor = () => {
         <input type="file" accept="image/*" onChange={(e) => setPicture(e.target.files[0])} required />
         <button type="submit">Submit</button>
       </form>
+      <button onClick={handleNotToday}>Not Today</button>
     </div>
   );
 };

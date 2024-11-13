@@ -6,7 +6,7 @@ import Nav2 from './components2/Nav2';
 import SignUpTutor from './components2/SignUpTutor';
 import SearchTutors from './components2/SearchTutors';
 import SignUpParent from './components2/SignUpParent';
-// import './App.css';
+import './App.css';
 
 const App = () => {
   return (
