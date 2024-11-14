@@ -8,6 +8,7 @@ import SearchTutors from './components2/SearchTutors';
 import SignUpParent from './components2/SignUpParent';
 import ParentsLoginForm from './components2/ParentsLogin';
 import OpenKidsFunPage from './components2/EventsPage';
+import FooterInfor from './components2/Footer'
 import './App.css';
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/upcoming-kids-events" element={<OpenKidsFunPage />} />
           <Route path="/" element={<div>Home Page</div>} />
         </Routes>
+        <FooterInfor/>
       </div>
     </Router>
   );
