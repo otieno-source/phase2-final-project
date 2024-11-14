@@ -282,3 +282,30 @@ footer, p{
 /* serch settings 2 end */
 
 
+.searchbtn {
+  display: inline-block;             /* Makes the link behave like a button */
+  padding: 10px 20px;                /* Padding for a button-like appearance */
+  font-size: 16px;                   /* Font size for the text inside the button */
+  font-weight: bold;                 /* Make the text bold */
+  text-align: center;                /* Centers the text inside the button */
+  text-decoration: none;             /* Removes underline from the link */
+  background-color: #ed9c05;         /* Background color for the button */
+  color: white;                      /* Text color */
+  border-radius: 5px;                /* Rounded corners for the button */
+  transition: background-color 0.3s, transform 0.3s;  /* Smooth transitions */
+  cursor: pointer;                  /* Show pointer cursor on hover */
+}
+
+/* Button Hover Effect */
+.searchbtn:hover {
+  background-color: #5c6bc0;         /* Lighter shade for hover state */
+  transform: translateY(-2px);       /* Slight lift effect on hover */
+}
+
+/* Button Active Effect (when clicked) */
+.searchbtn:active {
+  background-color: #333435;         /* Keeps the same background when pressed */
+  transform: translateY(2px);        /* Pushes the button down slightly on click */
+}
+
+
