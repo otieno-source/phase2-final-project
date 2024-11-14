@@ -25,7 +25,7 @@ const SignUpTutor = () => {
       picture: await handleFileUpload(picture)
     };
 
-    fetch('http://localhost:3000/tutors', {
+    fetch('https://phase2-final-project.onrender.com/tutors', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
