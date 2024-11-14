@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/phase2-final-project/static/css/main.85d2dab9.css",
-    "main.js": "/phase2-final-project/static/js/main.a7e0dfe4.js",
+    "main.css": "/phase2-final-project/static/css/main.416a074b.css",
+    "main.js": "/phase2-final-project/static/js/main.8ae30ada.js",
     "static/js/453.a38db28e.chunk.js": "/phase2-final-project/static/js/453.a38db28e.chunk.js",
     "static/media/ladychildrenlearning.jpg": "/phase2-final-project/static/media/ladychildrenlearning.336313d5ad856c0f9e86.jpg",
     "index.html": "/phase2-final-project/index.html",
-    "main.85d2dab9.css.map": "/phase2-final-project/static/css/main.85d2dab9.css.map",
-    "main.a7e0dfe4.js.map": "/phase2-final-project/static/js/main.a7e0dfe4.js.map",
+    "main.416a074b.css.map": "/phase2-final-project/static/css/main.416a074b.css.map",
+    "main.8ae30ada.js.map": "/phase2-final-project/static/js/main.8ae30ada.js.map",
     "453.a38db28e.chunk.js.map": "/phase2-final-project/static/js/453.a38db28e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85d2dab9.css",
-    "static/js/main.a7e0dfe4.js"
+    "static/css/main.416a074b.css",
+    "static/js/main.8ae30ada.js"
   ]
 }
