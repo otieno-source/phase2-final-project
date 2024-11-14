@@ -7,7 +7,7 @@ const SearchTutors = () => {
   const navigate = useNavigate(); 
 
   useEffect(() => {
-    fetch('http://localhost:3000/tutors')
+    fetch('https://phase2-final-project.onrender.com/tutors')
       .then((response) => response.json())
       .then((data) => {
         setTutors(data); 
