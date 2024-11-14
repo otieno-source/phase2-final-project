@@ -2,7 +2,7 @@ body {
   font-family:'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  /* background-color: #c4c4c7; */
 }
 
 .app-container {
@@ -68,6 +68,11 @@ body {
   text-decoration: none;
 }
 
+.upcoming-kids-event{
+  color: #a47103;
+  font-size: large;
+}
+
 .searchbtn{
 	font-size: xx-large;
   font-weight: 700;
@@ -93,13 +98,13 @@ body {
 }
 
 .search-tutors{
-  max-width: 600px;
+  max-width: 300px;
   margin: 20px auto;
   padding: 20px;
   
   border-radius: 300px;
-  border: 2px solid #a47103;
-  background-color: rgba(223, 216, 216, 0.559);
+  /* border: 2px solid #a47103; */
+  background-color: rgba(242, 241, 245, 0.628);
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -173,3 +178,107 @@ footer, p{
   font-size: smaller;
   max-height: fit-content;
 }
+
+
+.bodyfunpageDisplay {
+  /* background-color: #393835; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.image-slider {
+  
+  position: relative;
+  max-width: 600px; /* Set a max width for the slider */
+  overflow: hidden;
+}
+
+.image-caption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.slider-controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.slider-controls button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #0f1a59;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider-controls button:hover {
+  background-color: #5c6bc0;
+}
+
+.funpageHeader {
+  display: grid;
+  grid-template-rows: 100%;
+  text-align: center;
+ 
+}
+
+/* search setting2 */
+
+.search-tutors {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tutor-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tutor-item {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 20px;
+  max-width: 250px; /* Adjust as needed */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tutor-image {
+  width: 100%; /* Make sure the image fills its container */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Maintain aspect ratio while filling the container */
+}
+
+.tutor-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tutor-info h3 {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.tutor-info p {
+  margin: 5px 0;
+}
+
+/* serch settings 2 end */
+
+
