@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/phase2-final-project/static/css/main.f8ef9d8e.css",
+    "main.css": "/phase2-final-project/static/css/main.e719cddf.css",
     "main.js": "/phase2-final-project/static/js/main.4a06a136.js",
     "static/js/453.a38db28e.chunk.js": "/phase2-final-project/static/js/453.a38db28e.chunk.js",
     "static/media/ladychildrenlearning.jpg": "/phase2-final-project/static/media/ladychildrenlearning.336313d5ad856c0f9e86.jpg",
     "index.html": "/phase2-final-project/index.html",
-    "main.f8ef9d8e.css.map": "/phase2-final-project/static/css/main.f8ef9d8e.css.map",
+    "main.e719cddf.css.map": "/phase2-final-project/static/css/main.e719cddf.css.map",
     "main.4a06a136.js.map": "/phase2-final-project/static/js/main.4a06a136.js.map",
     "453.a38db28e.chunk.js.map": "/phase2-final-project/static/js/453.a38db28e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8ef9d8e.css",
+    "static/css/main.e719cddf.css",
     "static/js/main.4a06a136.js"
   ]
 }
