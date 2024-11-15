@@ -1,0 +1,48 @@
+/* Background styles */
+.about-us {
+    position: relative;
+    height: 100vh; /* Full-screen height */
+    background-image: url('https://source.unsplash.com/1600x900/?education,galaxy');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Overlay for text readability */
+  .about-overlay {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  /* Typography */
+  .about-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffd700; /* Golden color for the title */
+  }
+  
+  .about-overlay p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-overlay h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-overlay p {
+      font-size: 1rem;
+    }
+  }

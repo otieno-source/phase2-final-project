@@ -159,7 +159,7 @@ button:hover {
   margin-bottom: 20px;
 }
 
-footer{
+/* footer{
   margin-top: 50px;
   display: flex;
   flex-direction: row;
@@ -171,13 +171,13 @@ footer{
   margin-left: 10px;
   margin-right: 10px;
   padding-left: 10px;
-}
+} */
 
-footer, p{
+/* footer, p{
   font-style: normal;
   font-size: smaller;
   max-height: fit-content;
-}
+} */
 
 
 .bodyfunpageDisplay {
@@ -306,6 +306,62 @@ footer, p{
 .searchbtn:active {
   background-color: #333435;         /* Keeps the same background when pressed */
   transform: translateY(2px);        /* Pushes the button down slightly on click */
+}
+
+footer {
+  background-color: #3b3c3d; /* A nice deep blue shade */
+  color: #ffffff; /* White text for contrast */
+  padding: 20px; /* Space around the content */
+  text-align: center; /* Center-align text */
+  font-family: 'Arial', sans-serif; /* Modern, clean font */
+  line-height: 1.6; /* Improved readability */
+}
+
+footer p {
+  margin: 10px 0; /* Space between paragraphs */
+}
+
+footer p:nth-child(2),
+footer p:nth-child(3) {
+  border-left: 1px solid #ffffff; /* Vertical divider between contact info */
+  padding-left: 15px;
+}
+
+footer p:first-child {
+  padding-right: 15px;
+}
+
+footer p span {
+  font-weight: bold; /* Highlight names and roles */
+}
+
+footer a {
+  color: #ffd700; /* Highlight email and clickable content */
+  text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #ffcc00; /* Slightly brighter yellow on hover */
+}
+
+@media (min-width: 600px) {
+  footer {
+    display: flex;
+    justify-content: space-evenly; /* Spread items evenly */
+    align-items: flex-start; /* Align items to the top */
+    text-align: left; /* Align text to the left */
+  }
+
+  footer p {
+    margin: 0; /* Remove margins in flex layout */
+    padding: 0 15px; /* Add consistent spacing */
+  }
+
+  footer p:nth-child(2),
+  footer p:nth-child(3) {
+    border-left: none; /* Remove borders for larger screens */
+  }
 }
 
 

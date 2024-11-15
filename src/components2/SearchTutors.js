@@ -10,7 +10,7 @@ const SearchTutors = () => {
     fetch('https://phase2-final-project.onrender.com/tutors')
       .then((response) => response.json())
       .then((data) => {
-        console.log(data); // Debug: Check response structure
+        console.log(data); // to see if its working 
         setTutors(data); 
         setLoading(false); 
       })

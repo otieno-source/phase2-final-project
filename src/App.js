@@ -9,7 +9,9 @@ import SignUpParent from './components2/SignUpParent';
 import ParentsLoginForm from './components2/ParentsLogin';
 import OpenKidsFunPage from './components2/EventsPage';
 import FooterInfor from './components2/Footer'
+// import AboutUs from './components2/About';
 import './App.css';
+// import './Body.css';
 
 const App = () => {
   return (
@@ -18,6 +20,7 @@ const App = () => {
         <Header />
         <Nav1 />
         <Nav2 />
+        {/* <AboutUs/> */}
         <Routes>
           <Route path="/become-a-tutor" element={<SignUpTutor />} />
           <Route path="/search-tutors" element={<SearchTutors />} />

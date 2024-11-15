@@ -6,7 +6,7 @@ const SignUpParent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle submission logic here.
+    // Handle submission logic here. i want parents details to go to a db.json file.
   };
 
   const handleNotToday = () => {
