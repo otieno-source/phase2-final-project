@@ -7,7 +7,7 @@
       "subject": "math",
       "age": 30,
       "rating": 5,
-      "picture": "path/to/uploaded/picture1.jpg",
+      "picture": "https://media.istockphoto.com/id/1162206933/photo/happy-smiling-young-black-man-posing-for-portrait.jpg?s=1024x1024&w=is&k=20&c=Y8fgzp6Gg3t4RmYl2B1yJj85LDGE2nz7L7f4bSXwfCM=",
       "id": "2070"
     },
     {
@@ -17,26 +17,26 @@
       "subject": "science",
       "age": 25,
       "rating": 4,
-      "picture": "path/to/uploaded/picture2.jpg",
+      "picture": "https://media.istockphoto.com/id/2149525800/photo/mixed-race-curly-woman-leaning-on-metallic-wall.jpg?s=1024x1024&w=is&k=20&c=vNRlQI1-sFudlQodH8IAr1ZYjL-NXkf7X-zoFGuiF9Q=",
       "id": "1169"
     },
     {
       "id": "f6ea",
-      "name": "collins",
+      "name": "Faith",
       "phone": "0786666",
       "subject": "maths",
       "salary": "34444",
       "age": "34",
-      "picture": "WhatsApp Image 2024-11-08 at 08.48.49.jpeg"
+      "picture": "https://media.istockphoto.com/id/487828695/photo/beautiful-woman-smiling.jpg?s=1024x1024&w=is&k=20&c=XkTnAflpC9e3kPXsvrplMszw2ncBFpm2ICYAjg394JQ="
     },
     {
       "id": "601e",
-      "name": "collins",
+      "name": "Nelly",
       "phone": "0786666",
       "subject": "maths",
       "salary": "34444",
       "age": "34",
-      "picture": "WhatsApp Image 2024-11-08 at 08.48.49.jpeg"
+      "picture": "https://media.istockphoto.com/id/1458692867/photo/profile-portrait-of-young-smiling-african-woman-with-braided-hair.jpg?s=1024x1024&w=is&k=20&c=_DfPcYjEvzesi9Mg_2wYSOwECvpVB7CAf_gK4khbcjw="
     },
     {
       "id": "7a34",
@@ -45,34 +45,34 @@
       "subject": "english",
       "salary": "455666",
       "age": "45",
-      "picture": "WhatsApp Image 2024-10-21 at 19.03.59.jpeg"
+      "picture": "https://media.istockphoto.com/id/2149592431/photo/smiling-african-american-man-with-arms-folded-over-blue-background-with-copy-space.jpg?s=1024x1024&w=is&k=20&c=VsVipcADhS4-XB_N3A6zMX_bsX4x6GQh0ksW3GOXMdk="
     },
     {
       "id": "7251",
-      "name": "vivian",
+      "name": "Dan",
       "phone": "345667777",
       "subject": "accounts",
       "salary": "50000",
       "age": "27",
-      "picture": "vivian.jpg"
+      "picture": "https://media.istockphoto.com/id/2181982988/photo/happy-african-american-man-looking-to-copy-space-in-studio-with-folded-hands.jpg?s=1024x1024&w=is&k=20&c=aSE7QyU5TgCQtTeZmfaRvWNT7MU1DWDT8JQ-LTUpReE="
     },
     {
       "id": "2ffa",
-      "name": "ffff",
+      "name": "Malik",
       "phone": "5555",
-      "subject": "ffff",
+      "subject": "computer",
       "salary": "344",
       "age": "45",
-      "picture": "WhatsApp Image 2024-10-21 at 19.03.59.jpeg"
+      "picture": "https://media.istockphoto.com/id/2164332747/photo/studio-shot-of-a-smiling-african-american.jpg?s=1024x1024&w=is&k=20&c=vJtAkmKplBlAdv0t7YHiAmouBiWBNNFtktOQXswyTz0="
     },
     {
       "id": "974e",
-      "name": "bobyblack",
+      "name": "Mohamed",
       "phone": "8990999",
       "subject": "maths",
       "salary": "78888",
       "age": "56",
-      "picture": "Img_C68753DF C68753DF.tif"
+      "picture": "https://media.istockphoto.com/id/1411659610/photo/portrait-of-handsome-young-black-man.webp?s=1024x1024&w=is&k=20&c=8WSeG-OjWv4XmBEWy9Qb87PB7p9zhFi2CUQpdyAaxcg="
     }
   ]
 }

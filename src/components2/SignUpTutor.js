@@ -7,12 +7,8 @@ const SignUpTutor = () => {
   const [subject, setSubject] = useState('');
   const [salary, setSalary] = useState('');
   const [age, setAge] = useState('');
-  const [picture, setPicture] = useState(null);
+  const [pictureUrl, setPictureUrl] = useState(''); // URL for the image
   const navigate = useNavigate();
-
-  const handleFileUpload = (file) => {
-    return file.name; 
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,7 +18,7 @@ const SignUpTutor = () => {
       subject,
       salary,
       age,
-      picture: await handleFileUpload(picture)
+      picture: pictureUrl, // Use the entered URL as the picture
     };
 
     fetch('https://phase2-final-project.onrender.com/tutors', {
@@ -56,10 +52,15 @@ const SignUpTutor = () => {
         <input type="text" placeholder="Subject" value={subject} onChange={(e) => setSubject(e.target.value)} required />
         <input type="number" placeholder="Salary" value={salary} onChange={(e) => setSalary(e.target.value)} required />
         <input type="number" placeholder="Age" value={age} onChange={(e) => setAge(e.target.value)} required />
-        <input type="file" accept="image/*" onChange={(e) => setPicture(e.target.files[0])} required />
+        <input 
+          type="url" 
+          placeholder="Profile Picture URL" 
+          value={pictureUrl} 
+          onChange={(e) => setPictureUrl(e.target.value)} 
+          required 
+        />
         <button type="submit">Submit</button>
       </form>
-      
     </div>
   );
 };

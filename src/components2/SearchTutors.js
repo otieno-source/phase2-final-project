@@ -10,6 +10,7 @@ const SearchTutors = () => {
     fetch('https://phase2-final-project.onrender.com/tutors')
       .then((response) => response.json())
       .then((data) => {
+        console.log(data); // Debug: Check response structure
         setTutors(data); 
         setLoading(false); 
       })
@@ -30,8 +31,8 @@ const SearchTutors = () => {
         {tutors.map((tutor, index) => (
           <li key={index} className="tutor-item">
             <img 
-              src={tutor.picture} 
-              alt={tutor.name} 
+              src={tutor.picture || '/fallback-image.jpg'} 
+              alt={tutor.name || "Tutor"} 
               className="tutor-image" 
             />
             <div className="tutor-info">
